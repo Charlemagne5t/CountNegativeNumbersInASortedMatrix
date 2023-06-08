@@ -14,6 +14,7 @@ public class SolutionTest {
         Assert.assertEquals(output, new Solution().countNegatives(grid));
     }
 
+
     @Test
     public void countNegativesTest2() {
         int[][] grid = {
@@ -21,6 +22,16 @@ public class SolutionTest {
                 {1, 0}
         };
         int output = 0;
+        Assert.assertEquals(output, new Solution().countNegatives(grid));
+    }
+
+    @Test
+    public void countNegativesTest3() {
+        int[][] grid = {
+                {5, 1, 0},
+                {-5, -5, -5}
+        };
+        int output = 3;
         Assert.assertEquals(output, new Solution().countNegatives(grid));
     }
 }
